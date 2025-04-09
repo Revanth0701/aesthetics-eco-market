@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our eco marketplace
+				eco: {
+					green: '#6B8F71',
+					leaf: '#A0C1A8',
+					terracotta: '#C87F5F',
+					clay: '#E6B89C',
+					sand: '#F2E6D8',
+					stone: '#D9D4CC',
 				}
 			},
 			borderRadius: {
