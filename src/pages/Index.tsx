@@ -11,7 +11,6 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
       <section className="bg-gradient-to-r from-eco-leaf/20 to-eco-sand/50 py-16 md:py-24">
         <div className="eco-container text-center md:text-left flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 space-y-6">
@@ -35,7 +34,7 @@ const Index = () => {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <div className="bg-white p-4 rounded-lg rotate-2 shadow-lg max-w-md mx-auto">
               <img
-                src="/images/artisan-crafts.jpg"
+                src="/lovable-uploads/3110e0a4-8712-4bec-91c2-a9b08116afa1.png"
                 alt="Artisan Crafting Handmade Products"
                 className="rounded-lg object-cover w-full h-full"
               />
@@ -44,7 +43,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Values Section */}
       <section className="py-16">
         <div className="eco-container">
           <h2 className="eco-heading text-center mb-12">Our Values</h2>
@@ -82,7 +80,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
       <section className="py-12 bg-eco-sand/30">
         <div className="eco-container">
           <div className="flex justify-between items-center mb-8">
@@ -95,7 +92,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New Arrivals */}
       <section className="py-12">
         <div className="eco-container">
           <div className="flex justify-between items-center mb-8">
@@ -108,7 +104,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Artisan Spotlight */}
       <section className="py-16 bg-gradient-to-r from-eco-leaf/20 to-eco-sand/50">
         <div className="eco-container">
           <h2 className="eco-heading text-center mb-12">Meet Our Artisans</h2>
@@ -136,7 +131,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Custom Orders CTA */}
       <section className="py-16">
         <div className="eco-container text-center max-w-3xl mx-auto space-y-6">
           <h2 className="eco-heading">Looking for Something Special?</h2>
