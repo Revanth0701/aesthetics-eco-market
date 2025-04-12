@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import ProductGrid from "@/components/ProductGrid";
 import { Button } from "@/components/ui/button";
@@ -36,9 +35,9 @@ const Index = () => {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <div className="bg-white p-4 rounded-lg rotate-2 shadow-lg max-w-md mx-auto">
               <img
-                src="/placeholder.svg"
-                alt="Featured Products Collage"
-                className="rounded"
+                src="/images/artisan-crafts.jpg"
+                alt="Artisan Crafting Handmade Products"
+                className="rounded-lg object-cover w-full h-full"
               />
             </div>
           </div>
@@ -116,9 +115,9 @@ const Index = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
               <img
-                src="/placeholder.svg"
+                src="/images/artisan-workshop.jpg"
                 alt="Artisan at work"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg object-cover w-full h-full"
               />
             </div>
             <div className="md:w-1/2 space-y-6">
