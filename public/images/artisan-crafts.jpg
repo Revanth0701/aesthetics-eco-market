@@ -1,21 +1,2 @@
 
-<!-- This is a base64 encoded image representing handcrafted eco-friendly products -->
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <rect width="800" height="600" fill="#f9f5f0"/>
-  <g transform="translate(400, 300)">
-    <g stroke="#6a994e" stroke-width="8" fill="none">
-      <!-- Basket icon representing handmade products -->
-      <path d="M-100,-50 L-140,50 L140,50 L100,-50 Z" />
-      <path d="M-120,0 C-120,-80 120,-80 120,0" />
-      
-      <!-- Hand with heart representing artisanal craftsmanship -->
-      <path d="M-40,100 C-20,80 0,60 20,100 C40,60 60,80 80,100 L20,160 Z" />
-      <path d="M-60,120 L-60,200 L100,200 L100,120" />
-      
-      <!-- Leaf pattern representing eco-friendly nature -->
-      <path d="M-140,-80 C-100,-120 -60,-80 -80,-40 C-40,-60 0,-100 -40,-140" />
-      <path d="M140,-80 C100,-120 60,-80 80,-40 C40,-60 0,-100 40,-140" />
-    </g>
-    <text x="0" y="230" font-family="Arial" font-size="24" fill="#386641" text-anchor="middle">Handcrafted Eco-Friendly Products</text>
-  </g>
-</svg>
+[A base64-encoded JPEG image representing artisan crafting handmade, eco-friendly products]
