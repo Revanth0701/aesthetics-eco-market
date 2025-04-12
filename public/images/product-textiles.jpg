@@ -1,0 +1,37 @@
+
+<!-- This is a base64 encoded image representing handwoven textiles -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#f9f5f0"/>
+  <g transform="translate(400, 400)">
+    <g stroke="#606c38" stroke-width="8" fill="none">
+      <!-- Textile representation -->
+      <rect x="-250" y="-200" width="500" height="400" rx="5" />
+      
+      <!-- Weave pattern -->
+      <path d="M-250,-150 L250,-150" stroke-dasharray="40,20" />
+      <path d="M-250,-100 L250,-100" stroke-dasharray="30,30" />
+      <path d="M-250,-50 L250,-50" stroke-dasharray="50,10" />
+      <path d="M-250,0 L250,0" stroke-dasharray="20,20" />
+      <path d="M-250,50 L250,50" stroke-dasharray="15,25" />
+      <path d="M-250,100 L250,100" stroke-dasharray="30,20" />
+      <path d="M-250,150 L250,150" stroke-dasharray="25,25" />
+      
+      <!-- Vertical threads -->
+      <path d="M-200,-200 L-200,200" stroke-dasharray="20,20" />
+      <path d="M-100,-200 L-100,200" stroke-dasharray="15,25" />
+      <path d="M0,-200 L0,200" stroke-dasharray="25,15" />
+      <path d="M100,-200 L100,200" stroke-dasharray="20,20" />
+      <path d="M200,-200 L200,200" stroke-dasharray="15,25" />
+      
+      <!-- Decorative embroidery elements -->
+      <circle cx="-150" cy="-120" r="20" />
+      <circle cx="150" cy="-120" r="20" />
+      <circle cx="-150" cy="120" r="20" />
+      <circle cx="150" cy="120" r="20" />
+      
+      <path d="M-50,-75 L50,-75 L0,-25 Z" />
+      <path d="M-50,75 L50,75 L0,25 Z" />
+    </g>
+    <text x="0" y="250" font-family="Arial" font-size="32" fill="#283618" text-anchor="middle">Handwoven Textiles</text>
+  </g>
+</svg>

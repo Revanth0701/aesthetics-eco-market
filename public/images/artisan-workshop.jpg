@@ -1,2 +1,33 @@
 
-[A base64 encoded placeholder image representing an artisan's workshop]
+<!-- This is a base64 encoded image representing an artisan's workshop -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f3ea"/>
+  <g transform="translate(400, 300)">
+    <g stroke="#bc6c25" stroke-width="8" fill="none">
+      <!-- Workshop representation -->
+      <rect x="-200" y="-150" width="400" height="300" rx="10" />
+      
+      <!-- Artisan at work -->
+      <circle cx="-50" cy="-20" r="40" /> <!-- Head -->
+      <path d="M-50,20 L-50,100" /> <!-- Body -->
+      <path d="M-50,40 L-100,80" /> <!-- Left arm -->
+      <path d="M-50,40 L20,60" /> <!-- Right arm -->
+      <path d="M-50,100 L-80,160" /> <!-- Left leg -->
+      <path d="M-50,100 L-20,160" /> <!-- Right leg -->
+      
+      <!-- Weaving loom or craft table -->
+      <rect x="20" y="-60" width="120" height="80" />
+      <path d="M20,-60 L140,20" />
+      <path d="M140,-60 L20,20" />
+      <path d="M20,-20 L140,-20" />
+      
+      <!-- Craft materials and tools -->
+      <circle cx="80" cy="80" r="30" />
+      <path d="M120,100 L160,140" />
+      <rect x="-180" y="-100" width="60" height="20" />
+      <rect x="-180" y="-70" width="60" height="20" />
+      <rect x="-180" y="-40" width="60" height="20" />
+    </g>
+    <text x="0" y="200" font-family="Arial" font-size="24" fill="#774936" text-anchor="middle">Rural Artisan Workshop</text>
+  </g>
+</svg>
