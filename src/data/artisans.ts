@@ -1,4 +1,3 @@
-
 import { Artisan } from "./types";
 
 export const artisans: Artisan[] = [
@@ -7,7 +6,7 @@ export const artisans: Artisan[] = [
     name: "Lakshmi",
     location: "Rajasthan, India",
     story: "Lakshmi has been weaving jute baskets for over 20 years, learning the craft from her mother. She leads a group of women in her village, creating sustainable home goods using local materials.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/93ae01c4-bfbf-4a7a-a660-c2c70c5620ae.png"
   },
   {
     id: "2",
