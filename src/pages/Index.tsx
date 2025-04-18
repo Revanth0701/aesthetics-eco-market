@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import ProductGrid from "@/components/ProductGrid";
 import { Button } from "@/components/ui/button";
@@ -111,9 +110,9 @@ const Index = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
               <img
-                src="/images/artisan-workshop.jpg"
-                alt="Artisan at work"
-                className="rounded-lg shadow-lg object-cover w-full h-full"
+                src="/lovable-uploads/93ae01c4-bfbf-4a7a-a660-c2c70c5620ae.png"
+                alt="Lakshmi working on a jute basket"
+                className="rounded-lg shadow-lg object-cover w-full h-[400px]"
               />
             </div>
             <div className="md:w-1/2 space-y-6">
