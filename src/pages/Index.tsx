@@ -1,3 +1,4 @@
+
 import Layout from "@/components/Layout";
 import ProductGrid from "@/components/ProductGrid";
 import { Button } from "@/components/ui/button";
@@ -34,8 +35,8 @@ const Index = () => {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <div className="bg-white p-4 rounded-lg rotate-2 shadow-lg max-w-md mx-auto">
               <img
-                src="/lovable-uploads/3110e0a4-8712-4bec-91c2-a9b08116afa1.png"
-                alt="Artisan Crafting Handmade Products"
+                src="/lovable-uploads/6d60b2f2-6f27-4ffc-8804-858b85c80960.png"
+                alt="Indian Handcraft: Artisan Crafted Products"
                 className="rounded-lg object-cover w-full h-full"
               />
             </div>
