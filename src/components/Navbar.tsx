@@ -1,11 +1,16 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ShoppingCart, Search, Menu, X } from "lucide-react";
+import { ShoppingCart, Search, Menu, X, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { useCart } from "@/hooks/useCart";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cart, removeFromCart, clearCart, cartCount, cartTotal } = useCart();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -41,12 +46,70 @@ const Navbar = () => {
           <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10">
             <Search className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10">
-            <ShoppingCart className="h-5 w-5" />
-            <span className="absolute top-0 right-0 bg-eco-terracotta text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-              0
-            </span>
-          </Button>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10 relative">
+                <ShoppingCart className="h-5 w-5" />
+                {cartCount > 0 && (
+                  <Badge className="absolute -top-1 -right-1 bg-eco-terracotta text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                    {cartCount}
+                  </Badge>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-80 p-0" align="end">
+              <div className="p-4 bg-eco-green/10 font-medium">Your Cart ({cartCount} items)</div>
+              {cartCount === 0 ? (
+                <div className="p-4 text-center text-muted-foreground">
+                  Your cart is empty
+                </div>
+              ) : (
+                <>
+                  <div className="max-h-96 overflow-auto">
+                    {cart.map((item) => (
+                      <div key={`${item.id}-${item.quantity}`} className="p-4 border-b border-eco-stone/10">
+                        <div className="flex justify-between">
+                          <div className="flex gap-3">
+                            <div className="w-16 h-16 bg-muted rounded overflow-hidden">
+                              <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                            </div>
+                            <div>
+                              <p className="font-medium">{item.name}</p>
+                              <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
+                              <p className="text-eco-green font-medium">${(item.price * item.quantity).toFixed(2)}</p>
+                            </div>
+                          </div>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => removeFromCart(item.id)}
+                            className="text-muted-foreground hover:text-destructive"
+                          >
+                            <Trash2 className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="p-4 space-y-4">
+                    <div className="flex justify-between font-medium">
+                      <span>Total:</span>
+                      <span className="text-eco-green">${cartTotal.toFixed(2)}</span>
+                    </div>
+                    <Separator />
+                    <div className="flex gap-2">
+                      <Button onClick={clearCart} variant="outline" className="flex-1">
+                        Clear Cart
+                      </Button>
+                      <Button className="flex-1 bg-eco-green hover:bg-eco-green/90">
+                        Checkout
+                      </Button>
+                    </div>
+                  </div>
+                </>
+              )}
+            </PopoverContent>
+          </Popover>
         </div>
 
         {/* Mobile menu button */}
@@ -78,12 +141,70 @@ const Navbar = () => {
               <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10">
                 <Search className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="absolute top-0 right-0 bg-eco-terracotta text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                  0
-                </span>
-              </Button>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button variant="ghost" size="icon" className="text-foreground hover:text-eco-green hover:bg-eco-leaf/10 relative">
+                    <ShoppingCart className="h-5 w-5" />
+                    {cartCount > 0 && (
+                      <Badge className="absolute -top-1 -right-1 bg-eco-terracotta text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                        {cartCount}
+                      </Badge>
+                    )}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-80 p-0" align="end">
+                  <div className="p-4 bg-eco-green/10 font-medium">Your Cart ({cartCount} items)</div>
+                  {cartCount === 0 ? (
+                    <div className="p-4 text-center text-muted-foreground">
+                      Your cart is empty
+                    </div>
+                  ) : (
+                    <>
+                      <div className="max-h-96 overflow-auto">
+                        {cart.map((item) => (
+                          <div key={`${item.id}-${item.quantity}`} className="p-4 border-b border-eco-stone/10">
+                            <div className="flex justify-between">
+                              <div className="flex gap-3">
+                                <div className="w-16 h-16 bg-muted rounded overflow-hidden">
+                                  <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                                </div>
+                                <div>
+                                  <p className="font-medium">{item.name}</p>
+                                  <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
+                                  <p className="text-eco-green font-medium">${(item.price * item.quantity).toFixed(2)}</p>
+                                </div>
+                              </div>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => removeFromCart(item.id)}
+                                className="text-muted-foreground hover:text-destructive"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="p-4 space-y-4">
+                        <div className="flex justify-between font-medium">
+                          <span>Total:</span>
+                          <span className="text-eco-green">${cartTotal.toFixed(2)}</span>
+                        </div>
+                        <Separator />
+                        <div className="flex gap-2">
+                          <Button onClick={clearCart} variant="outline" className="flex-1">
+                            Clear Cart
+                          </Button>
+                          <Button className="flex-1 bg-eco-green hover:bg-eco-green/90">
+                            Checkout
+                          </Button>
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </PopoverContent>
+              </Popover>
             </div>
           </div>
         </div>

@@ -47,7 +47,8 @@ const ProductDetail = () => {
             {product.inStock && (
               <ProductActions 
                 productName={product.name} 
-                inStock={product.inStock} 
+                inStock={product.inStock}
+                product={product}
               />
             )}
             

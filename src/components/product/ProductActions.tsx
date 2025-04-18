@@ -3,21 +3,22 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, ShoppingCart } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useCart } from "@/hooks/useCart";
+import { Product } from "@/data/types";
 
 interface ProductActionsProps {
   productName: string;
   inStock: boolean;
+  product: Product;
 }
 
-const ProductActions = ({ productName, inStock }: ProductActionsProps) => {
+const ProductActions = ({ productName, inStock, product }: ProductActionsProps) => {
   const [quantity, setQuantity] = useState(1);
   const { toast } = useToast();
+  const { addToCart } = useCart();
   
   const handleAddToCart = () => {
-    toast({
-      title: "Added to cart",
-      description: `${quantity} x ${productName} added to your cart.`,
-    });
+    addToCart(product, quantity);
   };
   
   const handleAddToWishlist = () => {
