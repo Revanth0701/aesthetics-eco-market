@@ -1,4 +1,3 @@
-
 import { Product, Category } from "./types";
 
 export const products: Product[] = [
@@ -110,6 +109,20 @@ export const products: Product[] = [
     materials: ["jute", "cotton", "banana fiber"],
     dimensions: "24\" x 36\"",
     featured: true,
+    inStock: true
+  },
+  {
+    id: "9",
+    name: "Beaded Fringe Jute Clutch",
+    description: "Elegant handcrafted clutch featuring delicate beadwork and natural jute fabric. Adorned with cream-colored fringe details and intricate crystal embellishments. Perfect for special occasions or as a statement piece for everyday wear.",
+    price: 89.99,
+    images: ["/lovable-uploads/a4522e05-36bc-4951-b0d5-b3ebf2d2ec07.png", "/placeholder.svg"],
+    category: Category.Accessories,
+    tags: ["bag", "clutch", "beaded", "jute", "handmade"],
+    artisan: "Meena",
+    materials: ["jute", "cotton fringe", "glass beads", "crystals"],
+    dimensions: "12\" x 8\"",
+    newArrival: true,
     inStock: true
   }
 ];
