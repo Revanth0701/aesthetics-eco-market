@@ -109,11 +109,13 @@ const Index = () => {
           <h2 className="eco-heading text-center mb-12">Meet Our Artisans</h2>
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
-              <img
-                src="/lovable-uploads/93ae01c4-bfbf-4a7a-a660-c2c70c5620ae.png"
-                alt="Lakshmi working on a jute basket"
-                className="rounded-lg shadow-lg object-cover w-full h-[400px]"
-              />
+              <div className="aspect-[4/3] relative rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src="/lovable-uploads/93ae01c4-bfbf-4a7a-a660-c2c70c5620ae.png"
+                  alt="Lakshmi working on a jute basket"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="md:w-1/2 space-y-6">
               <h3 className="text-2xl font-semibold text-eco-terracotta">Lakshmi's Story</h3>
