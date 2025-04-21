@@ -1,4 +1,3 @@
-
 import { Product, Category } from "./types";
 
 export const products: Product[] = [
@@ -167,6 +166,23 @@ export const products: Product[] = [
     artisan: "Lakshmi",
     materials: ["jute", "cotton", "natural dyes"],
     dimensions: "10\" x 12\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "11",
+    name: "Handcrafted Drawstring Tote Bag",
+    description: "Unique handcrafted tote bag featuring a stylish drawstring closure. Made from high-quality cotton with a bold star pattern, it's perfect for everyday use or gifting.",
+    price: 15.00,
+    images: [
+      "/lovable-uploads/bab493f0-42e5-48f6-ad32-ed23741a61c1.png",
+      "/images/artisan-crafts.jpg"
+    ],
+    category: Category.Accessories,
+    tags: ["bag", "tote", "drawstring", "handmade", "star"],
+    artisan: "Radha",
+    materials: ["cotton", "drawstring cord"],
+    dimensions: "12\" x 14\"",
     newArrival: true,
     inStock: true
   }
