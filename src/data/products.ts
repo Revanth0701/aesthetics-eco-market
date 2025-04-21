@@ -8,6 +8,7 @@ export const products: Product[] = [
     price: 45.99,
     images: [
       "/images/product-basket.jpg", // Real basket photo
+      "/lovable-uploads/1009825e-3869-4bbc-823c-af06a78c0403.png", // Added user provided image
       "/placeholder.svg"
     ],
     category: Category.HomeDecor,
