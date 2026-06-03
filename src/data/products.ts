@@ -5,6 +5,37 @@ import woodenSpoonsImg from "@/assets/product-wooden-spoons.jpg";
 import beadedNecklaceImg from "@/assets/product-beaded-necklace.jpg";
 import cushionCoverImg from "@/assets/product-cushion-cover.jpg";
 import wallHangingImg from "@/assets/product-wall-hanging.jpg";
+import juteBasketsSet from "@/assets/jute-baskets-set.png.asset.json";
+import madhubaniImg from "@/assets/product-madhubani.jpg";
+import brassDiyaImg from "@/assets/product-brass-diya.jpg";
+import pashminaImg from "@/assets/product-pashmina.jpg";
+import sandalwoodElephantImg from "@/assets/product-sandalwood-elephant.jpg";
+import kanthaThrowImg from "@/assets/product-kantha-throw.jpg";
+import channapatnaToyImg from "@/assets/product-channapatna-toy.jpg";
+import bluePotteryImg from "@/assets/product-blue-pottery.jpg";
+import banarasiScarfImg from "@/assets/product-banarasi-scarf.jpg";
+import dhokraHorseImg from "@/assets/product-dhokra-horse.jpg";
+import warliPaintingImg from "@/assets/product-warli-painting.jpg";
+import walnutBoxImg from "@/assets/product-walnut-box.jpg";
+import terracottaChimeImg from "@/assets/product-terracotta-chime.jpg";
+import phulkariImg from "@/assets/product-phulkari.jpg";
+import marbleCoastersImg from "@/assets/product-marble-coasters.jpg";
+import bidriBowlImg from "@/assets/product-bidri-bowl.jpg";
+import bandhaniImg from "@/assets/product-bandhani.jpg";
+import coconutBowlsImg from "@/assets/product-coconut-bowls.jpg";
+import blockQuiltImg from "@/assets/product-block-quilt.jpg";
+import meenakariBoxImg from "@/assets/product-meenakari-box.jpg";
+import kolhapuriImg from "@/assets/product-kolhapuri.jpg";
+import singingBowlImg from "@/assets/product-singing-bowl.jpg";
+import leatherJournalImg from "@/assets/product-leather-journal.jpg";
+import jhumkaImg from "@/assets/product-jhumka.jpg";
+import kathputliImg from "@/assets/product-kathputli.jpg";
+import incenseImg from "@/assets/product-incense.jpg";
+import tanjoreImg from "@/assets/product-tanjore.jpg";
+import khadiKurtaImg from "@/assets/product-khadi-kurta.jpg";
+import brassUrliImg from "@/assets/product-brass-urli.jpg";
+import chessSetImg from "@/assets/product-chess-set.jpg";
+import mirrorBagImg from "@/assets/product-mirror-bag.jpg";
 
 export const products: Product[] = [
   {
