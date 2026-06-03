@@ -1,4 +1,10 @@
 import { Product, Category } from "./types";
+import tableRunnerImg from "@/assets/product-table-runner.jpg";
+import clayPlanterImg from "@/assets/product-clay-planter.jpg";
+import woodenSpoonsImg from "@/assets/product-wooden-spoons.jpg";
+import beadedNecklaceImg from "@/assets/product-beaded-necklace.jpg";
+import cushionCoverImg from "@/assets/product-cushion-cover.jpg";
+import wallHangingImg from "@/assets/product-wall-hanging.jpg";
 
 export const products: Product[] = [
   {
@@ -25,7 +31,7 @@ export const products: Product[] = [
     description: "Add a touch of elegance to your dining table with this hand-printed table runner. Made from 100% organic cotton and printed using natural dyes.",
     price: 32.50,
     images: [
-      "/images/product-textiles.jpg", // Real textile photo
+      tableRunnerImg,
       "/placeholder.svg"
     ],
     category: Category.Textile,
@@ -42,7 +48,7 @@ export const products: Product[] = [
     description: "Handcrafted clay planter perfect for your favorite houseplants. Each piece is uniquely designed and fired using traditional methods.",
     price: 28.99,
     images: [
-      "/images/product-pottery.jpg", // Real pottery photo
+      clayPlanterImg,
       "/placeholder.svg"
     ],
     category: Category.HomeDecor,
@@ -59,7 +65,7 @@ export const products: Product[] = [
     description: "A set of three beautifully carved wooden spoons made from reclaimed wood. Perfect for cooking and serving.",
     price: 19.99,
     images: [
-      "/images/product-decor.jpg", // Representing wood/utensil
+      woodenSpoonsImg,
       "/placeholder.svg"
     ],
     category: Category.Kitchen,
@@ -75,7 +81,7 @@ export const products: Product[] = [
     description: "A stunning statement necklace hand-beaded using recycled glass beads and natural seeds. Each piece is unique and tells a story.",
     price: 38.50,
     images: [
-      "/images/product-jewelry.jpg", // Jewelry photo
+      beadedNecklaceImg,
       "/placeholder.svg"
     ],
     category: Category.Jewelry,
@@ -108,7 +114,7 @@ export const products: Product[] = [
     description: "Beautiful cushion cover featuring traditional hand-blocked prints using natural dyes. Adds a touch of artisanal beauty to any home.",
     price: 24.99,
     images: [
-      "/images/product-textiles.jpg", // Related textile
+      cushionCoverImg,
       "/placeholder.svg"
     ],
     category: Category.HomeDecor,
@@ -125,8 +131,8 @@ export const products: Product[] = [
     description: "Elegant wall hanging handcrafted from natural fibers. Each piece is unique and adds texture and warmth to your walls.",
     price: 65.99,
     images: [
-      "/images/product-decor.jpg", // Wall/Decor photo
-      "/images/artisan-workshop.jpg" // Workshop scene
+      wallHangingImg,
+      "/placeholder.svg"
     ],
     category: Category.HomeDecor,
     tags: ["wall hanging", "macrame", "decor"],
