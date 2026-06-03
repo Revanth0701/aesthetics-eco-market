@@ -5,6 +5,37 @@ import woodenSpoonsImg from "@/assets/product-wooden-spoons.jpg";
 import beadedNecklaceImg from "@/assets/product-beaded-necklace.jpg";
 import cushionCoverImg from "@/assets/product-cushion-cover.jpg";
 import wallHangingImg from "@/assets/product-wall-hanging.jpg";
+import juteBasketsSet from "@/assets/jute-baskets-set.png.asset.json";
+import madhubaniImg from "@/assets/product-madhubani.jpg";
+import brassDiyaImg from "@/assets/product-brass-diya.jpg";
+import pashminaImg from "@/assets/product-pashmina.jpg";
+import sandalwoodElephantImg from "@/assets/product-sandalwood-elephant.jpg";
+import kanthaThrowImg from "@/assets/product-kantha-throw.jpg";
+import channapatnaToyImg from "@/assets/product-channapatna-toy.jpg";
+import bluePotteryImg from "@/assets/product-blue-pottery.jpg";
+import banarasiScarfImg from "@/assets/product-banarasi-scarf.jpg";
+import dhokraHorseImg from "@/assets/product-dhokra-horse.jpg";
+import warliPaintingImg from "@/assets/product-warli-painting.jpg";
+import walnutBoxImg from "@/assets/product-walnut-box.jpg";
+import terracottaChimeImg from "@/assets/product-terracotta-chime.jpg";
+import phulkariImg from "@/assets/product-phulkari.jpg";
+import marbleCoastersImg from "@/assets/product-marble-coasters.jpg";
+import bidriBowlImg from "@/assets/product-bidri-bowl.jpg";
+import bandhaniImg from "@/assets/product-bandhani.jpg";
+import coconutBowlsImg from "@/assets/product-coconut-bowls.jpg";
+import blockQuiltImg from "@/assets/product-block-quilt.jpg";
+import meenakariBoxImg from "@/assets/product-meenakari-box.jpg";
+import kolhapuriImg from "@/assets/product-kolhapuri.jpg";
+import singingBowlImg from "@/assets/product-singing-bowl.jpg";
+import leatherJournalImg from "@/assets/product-leather-journal.jpg";
+import jhumkaImg from "@/assets/product-jhumka.jpg";
+import kathputliImg from "@/assets/product-kathputli.jpg";
+import incenseImg from "@/assets/product-incense.jpg";
+import tanjoreImg from "@/assets/product-tanjore.jpg";
+import khadiKurtaImg from "@/assets/product-khadi-kurta.jpg";
+import brassUrliImg from "@/assets/product-brass-urli.jpg";
+import chessSetImg from "@/assets/product-chess-set.jpg";
+import mirrorBagImg from "@/assets/product-mirror-bag.jpg";
 
 export const products: Product[] = [
   {
@@ -13,8 +44,9 @@ export const products: Product[] = [
     description: "Beautifully crafted jute basket perfect for storage or as a decorative piece. Each basket is hand-woven by our artisans using traditional techniques passed down through generations.",
     price: 45.99,
     images: [
-      "/images/product-basket.jpg", // Real basket photo
-      "/lovable-uploads/1009825e-3869-4bbc-823c-af06a78c0403.png", // Added user provided image
+      juteBasketsSet.url, // Set of nested handwoven baskets
+      "/images/product-basket.jpg",
+      "/lovable-uploads/1009825e-3869-4bbc-823c-af06a78c0403.png",
       "/placeholder.svg"
     ],
     category: Category.HomeDecor,
@@ -189,6 +221,408 @@ export const products: Product[] = [
     tags: ["bag", "tote", "drawstring", "handmade", "star"],
     artisan: "Radha",
     materials: ["cotton", "drawstring cord"],
+    dimensions: "12\" x 14\"",
+    newArrival: true,
+    inStock: true
+  }
+  ,
+  {
+    id: "12",
+    name: "Madhubani Peacock Painting",
+    description: "Authentic Madhubani folk painting on handmade paper featuring twin peacocks and floral motifs. Hand-painted by artisans from Bihar using traditional natural pigments.",
+    price: 42.00,
+    images: [madhubaniImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["painting", "madhubani", "folk art", "wall art"],
+    artisan: "Sunita",
+    materials: ["handmade paper", "natural pigments"],
+    dimensions: "12\" x 16\"",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "13",
+    name: "Brass Diya Oil Lamp",
+    description: "Traditional hand-engraved brass diya, perfect for festivals, prayer rooms, and home decor. A symbol of light and prosperity.",
+    price: 18.50,
+    images: [brassDiyaImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["brass", "diya", "lamp", "festive"],
+    artisan: "Priya",
+    materials: ["brass"],
+    dimensions: "5\" x 3\"",
+    inStock: true
+  },
+  {
+    id: "14",
+    name: "Kashmiri Pashmina Shawl",
+    description: "Luxuriously soft pashmina shawl with paisley jacquard border, hand-loomed in Kashmir. A timeless heirloom piece.",
+    price: 89.00,
+    images: [pashminaImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["pashmina", "shawl", "kashmiri", "luxury"],
+    artisan: "Meena",
+    materials: ["pashmina wool"],
+    dimensions: "80\" x 28\"",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "15",
+    name: "Sandalwood Elephant Figurine",
+    description: "Intricately hand-carved sandalwood elephant with traditional motifs. A symbol of wisdom and good luck.",
+    price: 34.99,
+    images: [sandalwoodElephantImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["sandalwood", "elephant", "carved", "figurine"],
+    artisan: "Geeta",
+    materials: ["sandalwood"],
+    dimensions: "5\" x 4\"",
+    inStock: true
+  },
+  {
+    id: "16",
+    name: "Kantha Embroidered Throw",
+    description: "Reversible cotton throw featuring traditional Kantha running stitch embroidery. Each piece is hand-stitched by Bengali artisans.",
+    price: 55.00,
+    images: [kanthaThrowImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["kantha", "throw", "embroidery", "bengali"],
+    artisan: "Anjali",
+    materials: ["cotton", "thread"],
+    dimensions: "60\" x 90\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "17",
+    name: "Channapatna Wooden Spinning Top",
+    description: "Eco-friendly wooden toy from Channapatna, lacquered with natural vegetable dyes. Safe and delightful for children.",
+    price: 9.99,
+    images: [channapatnaToyImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["toy", "wooden", "channapatna", "kids"],
+    artisan: "Radha",
+    materials: ["ivory wood", "vegetable dyes"],
+    inStock: true
+  },
+  {
+    id: "18",
+    name: "Jaipur Blue Pottery Vase",
+    description: "Hand-painted blue pottery vase from Jaipur featuring traditional Persian-influenced floral motifs in cobalt and turquoise.",
+    price: 48.00,
+    images: [bluePotteryImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["pottery", "vase", "jaipur", "blue"],
+    artisan: "Sunita",
+    materials: ["quartz", "ceramic glaze"],
+    dimensions: "8\" x 6\"",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "19",
+    name: "Banarasi Silk Scarf",
+    description: "Pure silk scarf woven in Varanasi with traditional golden zari border. Lightweight and elegant for any occasion.",
+    price: 36.50,
+    images: [banarasiScarfImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["silk", "banarasi", "scarf", "zari"],
+    artisan: "Meena",
+    materials: ["pure silk", "zari thread"],
+    dimensions: "70\" x 22\"",
+    inStock: true
+  },
+  {
+    id: "20",
+    name: "Dhokra Tribal Horse",
+    description: "Handcrafted Dhokra metal horse using the ancient lost-wax casting technique by tribal artisans of Chhattisgarh.",
+    price: 29.99,
+    images: [dhokraHorseImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["dhokra", "metal", "tribal", "horse"],
+    artisan: "Kavita",
+    materials: ["brass alloy"],
+    dimensions: "6\" x 5\"",
+    inStock: true
+  },
+  {
+    id: "21",
+    name: "Warli Tribal Painting",
+    description: "Framed Warli painting depicting village life with traditional white pigment on earthy ochre background.",
+    price: 39.00,
+    images: [warliPaintingImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["warli", "painting", "tribal", "framed"],
+    artisan: "Lakshmi",
+    materials: ["canvas", "natural pigments", "wood frame"],
+    dimensions: "10\" x 10\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "22",
+    name: "Kashmiri Walnut Wood Box",
+    description: "Hand-carved walnut wood keepsake box from Kashmir featuring intricate chinar leaf and floral motifs.",
+    price: 52.00,
+    images: [walnutBoxImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["walnut", "carved", "box", "kashmiri"],
+    artisan: "Priya",
+    materials: ["walnut wood"],
+    dimensions: "7\" x 5\" x 3\"",
+    inStock: true
+  },
+  {
+    id: "23",
+    name: "Terracotta Bell Wind Chime",
+    description: "Rustic terracotta wind chime with melodic clay bells. Handcrafted in West Bengal to bring a soothing earthy sound.",
+    price: 16.99,
+    images: [terracottaChimeImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["terracotta", "wind chime", "rustic"],
+    artisan: "Sunita",
+    materials: ["terracotta clay", "jute cord"],
+    dimensions: "18\" length",
+    inStock: true
+  },
+  {
+    id: "24",
+    name: "Phulkari Embroidered Dupatta",
+    description: "Vibrant Phulkari hand-embroidered dupatta from Punjab, featuring traditional floral thread work on natural cotton.",
+    price: 44.00,
+    images: [phulkariImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["phulkari", "dupatta", "punjabi", "embroidery"],
+    artisan: "Anjali",
+    materials: ["cotton", "silk thread"],
+    dimensions: "90\" x 36\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "25",
+    name: "Marble Inlay Coasters (Set of 4)",
+    description: "Set of four white marble coasters with traditional pietra dura inlay work from Agra. Functional art for your table.",
+    price: 27.50,
+    images: [marbleCoastersImg, "/placeholder.svg"],
+    category: Category.Kitchen,
+    tags: ["marble", "coasters", "inlay", "agra"],
+    artisan: "Radha",
+    materials: ["white marble", "semi-precious stones"],
+    dimensions: "4\" diameter",
+    inStock: true
+  },
+  {
+    id: "26",
+    name: "Bidri Ware Decorative Bowl",
+    description: "Elegant Bidri bowl from Karnataka with fine silver inlay on blackened zinc alloy. A 14th-century craft tradition.",
+    price: 62.00,
+    images: [bidriBowlImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["bidri", "bowl", "silver inlay"],
+    artisan: "Kavita",
+    materials: ["zinc alloy", "silver"],
+    dimensions: "6\" diameter",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "27",
+    name: "Bandhani Tie-Dye Stole",
+    description: "Traditional Bandhani stole from Gujarat with vibrant tie-dye dot patterns. Lightweight and full of color.",
+    price: 22.00,
+    images: [bandhaniImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["bandhani", "tie-dye", "stole", "gujarati"],
+    artisan: "Meena",
+    materials: ["cotton", "natural dyes"],
+    dimensions: "72\" x 24\"",
+    inStock: true
+  },
+  {
+    id: "28",
+    name: "Coconut Shell Bowl Set",
+    description: "Set of polished coconut shell bowls — sustainable, lightweight, and perfect for snacks, salads, or decor.",
+    price: 19.50,
+    images: [coconutBowlsImg, "/placeholder.svg"],
+    category: Category.Kitchen,
+    tags: ["coconut", "bowls", "eco-friendly", "kitchen"],
+    artisan: "Geeta",
+    materials: ["coconut shell", "natural oils"],
+    dimensions: "4\" diameter",
+    inStock: true
+  },
+  {
+    id: "29",
+    name: "Jaipur Block Print Quilt",
+    description: "Reversible cotton quilt with indigo Jaipur block print, filled with soft cotton for warmth and comfort.",
+    price: 79.00,
+    images: [blockQuiltImg, "/placeholder.svg"],
+    category: Category.Textile,
+    tags: ["quilt", "block print", "indigo", "jaipur"],
+    artisan: "Lakshmi",
+    materials: ["cotton", "natural dyes"],
+    dimensions: "90\" x 108\"",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "30",
+    name: "Meenakari Peacock Trinket Box",
+    description: "Stunning Meenakari enamel trinket box with vibrant peacock motif. Handcrafted by artisans of Rajasthan.",
+    price: 33.99,
+    images: [meenakariBoxImg, "/placeholder.svg"],
+    category: Category.Jewelry,
+    tags: ["meenakari", "enamel", "box", "rajasthani"],
+    artisan: "Priya",
+    materials: ["metal", "enamel"],
+    dimensions: "4\" x 3\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "31",
+    name: "Kolhapuri Leather Sandals",
+    description: "Authentic Kolhapuri leather sandals hand-stitched in Maharashtra. Durable, breathable, and effortlessly stylish.",
+    price: 38.00,
+    images: [kolhapuriImg, "/placeholder.svg"],
+    category: Category.Accessories,
+    tags: ["leather", "sandals", "kolhapuri", "footwear"],
+    artisan: "Radha",
+    materials: ["vegetable-tanned leather"],
+    dimensions: "Multiple sizes",
+    inStock: true
+  },
+  {
+    id: "32",
+    name: "Brass Singing Bowl with Mallet",
+    description: "Hand-hammered brass singing bowl producing rich healing tones. Perfect for meditation and sound therapy.",
+    price: 45.00,
+    images: [singingBowlImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["brass", "singing bowl", "meditation"],
+    artisan: "Kavita",
+    materials: ["brass", "wooden mallet"],
+    dimensions: "5\" diameter",
+    inStock: true
+  },
+  {
+    id: "33",
+    name: "Embossed Leather Journal",
+    description: "Hand-bound leather journal with embossed mandala cover and unlined recycled cotton paper inside.",
+    price: 24.50,
+    images: [leatherJournalImg, "/placeholder.svg"],
+    category: Category.Accessories,
+    tags: ["leather", "journal", "mandala", "handmade"],
+    artisan: "Anjali",
+    materials: ["leather", "cotton paper"],
+    dimensions: "7\" x 5\"",
+    newArrival: true,
+    inStock: true
+  },
+  {
+    id: "34",
+    name: "Silver Oxidized Jhumka Earrings",
+    description: "Traditional Indian jhumka earrings in oxidized silver with red stone accents and dangling bead fringe.",
+    price: 21.00,
+    images: [jhumkaImg, "/placeholder.svg"],
+    category: Category.Jewelry,
+    tags: ["earrings", "jhumka", "silver", "ethnic"],
+    artisan: "Sunita",
+    materials: ["oxidized silver alloy", "glass beads"],
+    dimensions: "2.5\" length",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "35",
+    name: "Rajasthani Kathputli Puppet Pair",
+    description: "Colorful pair of traditional Rajasthani string puppets in royal costume. Beautiful as decor or for storytelling.",
+    price: 28.00,
+    images: [kathputliImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["puppet", "kathputli", "rajasthani", "folk"],
+    artisan: "Geeta",
+    materials: ["wood", "cotton fabric", "thread"],
+    dimensions: "18\" tall",
+    inStock: true
+  },
+  {
+    id: "36",
+    name: "Hand-Rolled Incense Set",
+    description: "Bundle of hand-rolled incense sticks in sandalwood, jasmine, and rose, with a carved wooden holder.",
+    price: 12.99,
+    images: [incenseImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["incense", "aromatherapy", "wooden holder"],
+    artisan: "Lakshmi",
+    materials: ["natural resins", "essential oils", "wood"],
+    inStock: true
+  },
+  {
+    id: "37",
+    name: "Tanjore Ganesha Painting",
+    description: "Framed Tanjore-style miniature painting of Lord Ganesha with traditional 22-karat gold foil detailing.",
+    price: 68.00,
+    images: [tanjoreImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["tanjore", "painting", "ganesha", "gold foil"],
+    artisan: "Priya",
+    materials: ["wood panel", "gold foil", "pigments"],
+    dimensions: "8\" x 8\"",
+    featured: true,
+    inStock: true
+  },
+  {
+    id: "38",
+    name: "Khadi Cotton Kurta",
+    description: "Hand-spun and hand-woven khadi cotton kurta with subtle hand-embroidered placket. Breathable and timeless.",
+    price: 42.50,
+    images: [khadiKurtaImg, "/placeholder.svg"],
+    category: Category.Accessories,
+    tags: ["khadi", "kurta", "cotton", "clothing"],
+    artisan: "Meena",
+    materials: ["khadi cotton"],
+    dimensions: "Multiple sizes",
+    inStock: true
+  },
+  {
+    id: "39",
+    name: "Brass Urli Decorative Bowl",
+    description: "Traditional brass urli bowl perfect for floating flowers and tealight candles. Adds elegance to any entryway.",
+    price: 49.99,
+    images: [brassUrliImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["brass", "urli", "decor", "festive"],
+    artisan: "Kavita",
+    materials: ["brass"],
+    dimensions: "10\" diameter",
+    inStock: true
+  },
+  {
+    id: "40",
+    name: "Handcrafted Wooden Chess Set",
+    description: "Heirloom-quality chess set with hand-turned rosewood and maple pieces on a contrasting wood board.",
+    price: 95.00,
+    images: [chessSetImg, "/placeholder.svg"],
+    category: Category.HomeDecor,
+    tags: ["chess", "wooden", "game", "rosewood"],
+    artisan: "Radha",
+    materials: ["rosewood", "maple wood"],
+    dimensions: "14\" x 14\"",
+    inStock: true
+  },
+  {
+    id: "41",
+    name: "Rajasthani Mirror Work Handbag",
+    description: "Vibrant patchwork handbag with traditional Rajasthani mirror embroidery, tassels, and a sturdy rope handle.",
+    price: 32.00,
+    images: [mirrorBagImg, "/placeholder.svg"],
+    category: Category.Accessories,
+    tags: ["bag", "mirror work", "rajasthani", "embroidered"],
+    artisan: "Anjali",
+    materials: ["cotton", "mirrors", "thread"],
     dimensions: "12\" x 14\"",
     newArrival: true,
     inStock: true
