@@ -44,8 +44,9 @@ export const products: Product[] = [
     description: "Beautifully crafted jute basket perfect for storage or as a decorative piece. Each basket is hand-woven by our artisans using traditional techniques passed down through generations.",
     price: 45.99,
     images: [
-      "/images/product-basket.jpg", // Real basket photo
-      "/lovable-uploads/1009825e-3869-4bbc-823c-af06a78c0403.png", // Added user provided image
+      juteBasketsSet.url, // Set of nested handwoven baskets
+      "/images/product-basket.jpg",
+      "/lovable-uploads/1009825e-3869-4bbc-823c-af06a78c0403.png",
       "/placeholder.svg"
     ],
     category: Category.HomeDecor,
