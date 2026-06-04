@@ -36,6 +36,57 @@ import khadiKurtaImg from "@/assets/product-khadi-kurta.jpg";
 import brassUrliImg from "@/assets/product-brass-urli.jpg";
 import chessSetImg from "@/assets/product-chess-set.jpg";
 import mirrorBagImg from "@/assets/product-mirror-bag.jpg";
+import bambooTote from "@/assets/bamboo-tote.png.asset.json";
+import pSandalwoodSoap from "@/assets/p-sandalwood-soap.jpg";
+import pChikankariKurti from "@/assets/p-chikankari-kurti.jpg";
+import pPattachitra from "@/assets/p-pattachitra.jpg";
+import pNataraja from "@/assets/p-nataraja.jpg";
+import pWoolRug from "@/assets/p-wool-rug.jpg";
+import pDhurrie from "@/assets/p-dhurrie.jpg";
+import pAjrakh from "@/assets/p-ajrakh.jpg";
+import pKalamkari from "@/assets/p-kalamkari.jpg";
+import pCopperBottle from "@/assets/p-copper-bottle.jpg";
+import pNestingDolls from "@/assets/p-nesting-dolls.jpg";
+import pLacBangles from "@/assets/p-lac-bangles.jpg";
+import pPichwai from "@/assets/p-pichwai.jpg";
+import pStoneBuddha from "@/assets/p-stone-buddha.jpg";
+import pBambooChime from "@/assets/p-bamboo-chime.jpg";
+import pJuteMat from "@/assets/p-jute-mat.jpg";
+import pCeramicMugs from "@/assets/p-ceramic-mugs.jpg";
+import pPouchWallet from "@/assets/p-pouch-wallet.jpg";
+import pMortarPestle from "@/assets/p-mortar-pestle.jpg";
+import pSilkBangles from "@/assets/p-silk-bangles.jpg";
+import pRosewoodComb from "@/assets/p-rosewood-comb.jpg";
+import pApron from "@/assets/p-apron.jpg";
+import pMojari from "@/assets/p-mojari.jpg";
+import pTablecloth from "@/assets/p-tablecloth.jpg";
+import pBrassHooks from "@/assets/p-brass-hooks.jpg";
+import pTerracottaTea from "@/assets/p-terracotta-tea.jpg";
+import pSariPillow from "@/assets/p-sari-pillow.jpg";
+import pLetterOpener from "@/assets/p-letter-opener.jpg";
+import pSilBatta from "@/assets/p-sil-batta.jpg";
+import pBoneInlayBox from "@/assets/p-bone-inlay-box.jpg";
+import pPaintedTray from "@/assets/p-painted-tray.jpg";
+import pPotHolders from "@/assets/p-pot-holders.jpg";
+import pFiligree from "@/assets/p-filigree.jpg";
+import pBeadCurtain from "@/assets/p-bead-curtain.jpg";
+import pToyTrain from "@/assets/p-toy-train.jpg";
+import pStoneCoasters from "@/assets/p-stone-coasters.jpg";
+import pGaneshaPlate from "@/assets/p-ganesha-plate.jpg";
+import pKhurjaMugs from "@/assets/p-khurja-mugs.jpg";
+import pBookmarks from "@/assets/p-bookmarks.jpg";
+import pMasalaDabba from "@/assets/p-masala-dabba.jpg";
+import pGlassLantern from "@/assets/p-glass-lantern.jpg";
+import pBathTowel from "@/assets/p-bath-towel.jpg";
+import pPoojaBell from "@/assets/p-pooja-bell.jpg";
+import pHairStick from "@/assets/p-hair-stick.jpg";
+import pLeatherWallet from "@/assets/p-leather-wallet.jpg";
+import pCoconutArt from "@/assets/p-coconut-art.jpg";
+import pBananaPlacemats from "@/assets/p-banana-placemats.jpg";
+import pIronHook from "@/assets/p-iron-hook.jpg";
+import pGlassVase from "@/assets/p-glass-vase.jpg";
+import pYogaBolster from "@/assets/p-yoga-bolster.jpg";
+import pEmbroideredCap from "@/assets/p-embroidered-cap.jpg";
 
 export const products: Product[] = [
   {
@@ -126,11 +177,11 @@ export const products: Product[] = [
   {
     id: "6",
     name: "Handwoven Bamboo Tote Bag",
-    description: "Stylish and sustainable tote bag woven from locally sourced bamboo. Perfect for shopping or as a beach bag.",
-    price: 49.99,
+    description: "Stylish and sustainable tote bag woven from locally sourced bamboo with a beautiful chevron pattern. Perfect for shopping, work, or as a beach bag.",
+    price: 24.99,
     images: [
-      "/lovable-uploads/6d60b2f2-6f27-4ffc-8804-858b85c80960.png", // Bamboo tote
-      "/images/artisan-crafts.jpg" // Handmade/crafty fallback
+      bambooTote.url,
+      "/images/artisan-crafts.jpg"
     ],
     category: Category.Accessories,
     tags: ["bag", "tote", "bamboo", "shopping"],
@@ -626,7 +677,57 @@ export const products: Product[] = [
     dimensions: "12\" x 14\"",
     newArrival: true,
     inStock: true
-  }
+  },
+  { id: "42", name: "Mysore Sandalwood Soap Set", description: "Set of three handmade sandalwood soaps from Mysore, naturally fragrant and skin-nourishing.", price: 14.50, images: [pSandalwoodSoap, "/placeholder.svg"], category: Category.HomeDecor, tags: ["soap", "sandalwood", "bath"], artisan: "Priya", materials: ["sandalwood oil", "coconut oil"], inStock: true },
+  { id: "43", name: "Lucknowi Chikankari Kurti", description: "Hand-embroidered white cotton kurti featuring delicate Lucknowi Chikankari thread work.", price: 49.99, images: [pChikankariKurti, "/placeholder.svg"], category: Category.Accessories, tags: ["kurti", "chikankari", "clothing"], artisan: "Meena", materials: ["cotton", "embroidery thread"], dimensions: "Multiple sizes", featured: true, inStock: true },
+  { id: "44", name: "Pattachitra Krishna Painting", description: "Authentic Odisha Pattachitra painting of Krishna on treated palm leaf with natural pigments.", price: 38.00, images: [pPattachitra, "/placeholder.svg"], category: Category.HomeDecor, tags: ["pattachitra", "krishna", "folk art"], artisan: "Sunita", materials: ["palm leaf", "natural pigments"], dimensions: "10\" x 14\"", inStock: true },
+  { id: "45", name: "Brass Nataraja Statue", description: "Hand-cast brass statue of dancing Shiva Nataraja, a timeless symbol of cosmic rhythm.", price: 72.00, images: [pNataraja, "/placeholder.svg"], category: Category.HomeDecor, tags: ["brass", "nataraja", "statue"], artisan: "Kavita", materials: ["brass"], dimensions: "10\" tall", featured: true, inStock: true },
+  { id: "46", name: "Hand-Knotted Wool Rug", description: "Hand-knotted wool rug with traditional Persian-inspired Indian motifs in rich jewel tones.", price: 149.00, images: [pWoolRug, "/placeholder.svg"], category: Category.HomeDecor, tags: ["rug", "wool", "carpet"], artisan: "Radha", materials: ["wool"], dimensions: "4' x 6'", inStock: true },
+  { id: "47", name: "Cotton Dhurrie Rug", description: "Handwoven flatweave cotton dhurrie rug with neutral stripes — durable and reversible.", price: 54.00, images: [pDhurrie, "/placeholder.svg"], category: Category.HomeDecor, tags: ["dhurrie", "rug", "cotton"], artisan: "Geeta", materials: ["cotton"], dimensions: "3' x 5'", inStock: true },
+  { id: "48", name: "Ajrakh Block Print Stole", description: "Indigo Ajrakh hand-block printed cotton stole with traditional geometric patterns.", price: 28.00, images: [pAjrakh, "/placeholder.svg"], category: Category.Textile, tags: ["ajrakh", "stole", "block print"], artisan: "Meena", materials: ["cotton", "natural dyes"], dimensions: "72\" x 28\"", newArrival: true, inStock: true },
+  { id: "49", name: "Kalamkari Tree of Life Tapestry", description: "Hand-painted Kalamkari cotton wall tapestry depicting the iconic tree of life motif.", price: 58.00, images: [pKalamkari, "/placeholder.svg"], category: Category.HomeDecor, tags: ["kalamkari", "tapestry", "wall art"], artisan: "Anjali", materials: ["cotton", "natural dyes"], dimensions: "36\" x 48\"", inStock: true },
+  { id: "50", name: "Hammered Copper Water Bottle", description: "Pure copper water bottle hand-hammered for Ayurvedic wellness benefits. Leak-proof cap.", price: 26.00, images: [pCopperBottle, "/placeholder.svg"], category: Category.Kitchen, tags: ["copper", "bottle", "ayurveda"], artisan: "Priya", materials: ["pure copper"], dimensions: "10\" tall, 1L", featured: true, inStock: true },
+  { id: "51", name: "Wooden Nesting Doll Set", description: "Set of five hand-painted wooden nesting dolls with colorful Indian folk motifs.", price: 32.00, images: [pNestingDolls, "/placeholder.svg"], category: Category.HomeDecor, tags: ["nesting dolls", "wooden", "kids"], artisan: "Lakshmi", materials: ["wood", "natural paint"], inStock: true },
+  { id: "52", name: "Lac Bangles Set", description: "Vibrant set of traditional Rajasthani lac bangles with kundan stone embellishments.", price: 18.50, images: [pLacBangles, "/placeholder.svg"], category: Category.Jewelry, tags: ["bangles", "lac", "rajasthani"], artisan: "Sunita", materials: ["lac", "glass stones"], inStock: true },
+  { id: "53", name: "Pichwai Cow Painting", description: "Traditional Pichwai painting of sacred cow surrounded by lotus blooms — Nathdwara art.", price: 65.00, images: [pPichwai, "/placeholder.svg"], category: Category.HomeDecor, tags: ["pichwai", "painting", "folk art"], artisan: "Kavita", materials: ["cloth", "natural pigments"], dimensions: "14\" x 14\"", inStock: true },
+  { id: "54", name: "Stone Carved Buddha Statue", description: "Serene hand-carved soapstone Buddha statue in meditation pose, perfect for altars.", price: 42.00, images: [pStoneBuddha, "/placeholder.svg"], category: Category.HomeDecor, tags: ["buddha", "stone", "statue"], artisan: "Radha", materials: ["soapstone"], dimensions: "8\" tall", featured: true, inStock: true },
+  { id: "55", name: "Bamboo Wind Chime", description: "Soothing bamboo wind chime handcrafted in Northeast India, producing mellow tones.", price: 17.00, images: [pBambooChime, "/placeholder.svg"], category: Category.HomeDecor, tags: ["wind chime", "bamboo"], artisan: "Geeta", materials: ["bamboo", "jute cord"], dimensions: "24\" length", inStock: true },
+  { id: "56", name: "Jute Welcome Door Mat", description: "Durable handwoven jute door mat with classic welcome lettering — eco-friendly.", price: 22.99, images: [pJuteMat, "/placeholder.svg"], category: Category.HomeDecor, tags: ["doormat", "jute"], artisan: "Lakshmi", materials: ["jute"], dimensions: "24\" x 36\"", inStock: true },
+  { id: "57", name: "Hand-Painted Ceramic Mugs (Set of 2)", description: "Pair of hand-painted ceramic mugs in classic blue-and-white Indian folk patterns.", price: 24.50, images: [pCeramicMugs, "/placeholder.svg"], category: Category.Kitchen, tags: ["mugs", "ceramic", "hand-painted"], artisan: "Priya", materials: ["ceramic"], inStock: true },
+  { id: "58", name: "Embroidered Coin Pouch", description: "Compact embroidered fabric pouch with mirror work, tassels, and zip closure.", price: 12.50, images: [pPouchWallet, "/placeholder.svg"], category: Category.Accessories, tags: ["pouch", "wallet", "embroidered"], artisan: "Anjali", materials: ["cotton", "thread", "mirrors"], dimensions: "6\" x 4\"", newArrival: true, inStock: true },
+  { id: "59", name: "Wooden Mortar and Pestle", description: "Traditional rosewood mortar and pestle for grinding fresh spices the artisan way.", price: 19.99, images: [pMortarPestle, "/placeholder.svg"], category: Category.Kitchen, tags: ["mortar", "pestle", "wooden"], artisan: "Meena", materials: ["rosewood"], dimensions: "5\" diameter", inStock: true },
+  { id: "60", name: "Silk Thread Bangles Stack", description: "Stack of colorful silk thread wrapped bangles in rainbow jewel tones.", price: 16.00, images: [pSilkBangles, "/placeholder.svg"], category: Category.Jewelry, tags: ["bangles", "silk thread"], artisan: "Sunita", materials: ["silk thread", "plastic core"], inStock: true },
+  { id: "61", name: "Hand-Carved Rosewood Comb", description: "Beautifully carved rosewood comb — gentle on hair and naturally antistatic.", price: 14.00, images: [pRosewoodComb, "/placeholder.svg"], category: Category.Accessories, tags: ["comb", "rosewood", "hair"], artisan: "Radha", materials: ["rosewood"], dimensions: "6\" length", inStock: true },
+  { id: "62", name: "Block Print Cotton Apron", description: "Cotton kitchen apron with traditional Indian floral block print and adjustable strap.", price: 21.50, images: [pApron, "/placeholder.svg"], category: Category.Kitchen, tags: ["apron", "block print", "cotton"], artisan: "Meena", materials: ["cotton"], inStock: true },
+  { id: "63", name: "Embroidered Mojari Shoes", description: "Hand-stitched leather mojari shoes with delicate floral embroidery — traditional Rajasthani footwear.", price: 46.00, images: [pMojari, "/placeholder.svg"], category: Category.Accessories, tags: ["mojari", "shoes", "leather"], artisan: "Priya", materials: ["leather", "embroidery thread"], dimensions: "Multiple sizes", featured: true, inStock: true },
+  { id: "64", name: "Floral Embroidered Tablecloth", description: "Hand-embroidered cotton tablecloth with vibrant floral motifs and lace trim.", price: 48.00, images: [pTablecloth, "/placeholder.svg"], category: Category.Textile, tags: ["tablecloth", "embroidered"], artisan: "Kavita", materials: ["cotton", "thread"], dimensions: "60\" x 90\"", inStock: true },
+  { id: "65", name: "Brass Peacock Wall Hooks (Pair)", description: "Pair of decorative brass peacock wall hooks — elegant for entryways and bedrooms.", price: 28.50, images: [pBrassHooks, "/placeholder.svg"], category: Category.HomeDecor, tags: ["brass", "hooks", "peacock"], artisan: "Geeta", materials: ["brass"], inStock: true },
+  { id: "66", name: "Terracotta Tea Set", description: "Rustic terracotta tea set with teapot and four kulhad cups — earthy and authentic.", price: 34.00, images: [pTerracottaTea, "/placeholder.svg"], category: Category.Kitchen, tags: ["terracotta", "tea set"], artisan: "Sunita", materials: ["terracotta clay"], inStock: true },
+  { id: "67", name: "Recycled Sari Patchwork Pillow", description: "Vibrant throw pillow stitched from upcycled silk sari patches — every piece is unique.", price: 26.00, images: [pSariPillow, "/placeholder.svg"], category: Category.HomeDecor, tags: ["pillow", "sari", "recycled"], artisan: "Lakshmi", materials: ["upcycled silk sari"], dimensions: "18\" x 18\"", newArrival: true, inStock: true },
+  { id: "68", name: "Carved Wooden Letter Opener", description: "Elegant hand-carved wooden letter opener with intricately detailed floral handle.", price: 11.50, images: [pLetterOpener, "/placeholder.svg"], category: Category.Accessories, tags: ["letter opener", "wooden"], artisan: "Anjali", materials: ["sheesham wood"], dimensions: "9\" length", inStock: true },
+  { id: "69", name: "Stone Sil Batta Spice Grinder", description: "Traditional Indian stone sil batta — perfect for grinding fresh wet spice masalas.", price: 38.99, images: [pSilBatta, "/placeholder.svg"], category: Category.Kitchen, tags: ["stone", "sil batta", "grinder"], artisan: "Priya", materials: ["granite stone"], inStock: true },
+  { id: "70", name: "Bone Inlay Jewelry Box", description: "Stunning bone inlay jewelry box with intricate orange floral pattern from Rajasthan.", price: 56.00, images: [pBoneInlayBox, "/placeholder.svg"], category: Category.Jewelry, tags: ["jewelry box", "bone inlay"], artisan: "Kavita", materials: ["wood", "bone inlay"], dimensions: "8\" x 5\" x 3\"", featured: true, inStock: true },
+  { id: "71", name: "Hand-Painted Wooden Tray", description: "Mango wood serving tray hand-painted with traditional Rajasthani folk art motifs.", price: 32.00, images: [pPaintedTray, "/placeholder.svg"], category: Category.Kitchen, tags: ["tray", "wooden", "painted"], artisan: "Radha", materials: ["mango wood", "paint"], dimensions: "14\" x 10\"", inStock: true },
+  { id: "72", name: "Quilted Cotton Pot Holders (Set of 3)", description: "Set of three quilted cotton pot holders with floral block print and heat-resistant lining.", price: 15.99, images: [pPotHolders, "/placeholder.svg"], category: Category.Kitchen, tags: ["pot holders", "quilted"], artisan: "Meena", materials: ["cotton", "batting"], inStock: true },
+  { id: "73", name: "Silver Filigree Pendant", description: "Delicate silver filigree pendant handcrafted in Cuttack with intricate wirework.", price: 39.00, images: [pFiligree, "/placeholder.svg"], category: Category.Jewelry, tags: ["silver", "filigree", "pendant"], artisan: "Sunita", materials: ["sterling silver"], inStock: true },
+  { id: "74", name: "Beaded Door Curtain", description: "Colorful handcrafted beaded door curtain — adds boho charm to any doorway.", price: 44.00, images: [pBeadCurtain, "/placeholder.svg"], category: Category.HomeDecor, tags: ["curtain", "beaded", "boho"], artisan: "Geeta", materials: ["wooden beads", "thread"], dimensions: "36\" x 72\"", inStock: true },
+  { id: "75", name: "Channapatna Wooden Toy Train", description: "Colorful eco-friendly wooden toy train from Channapatna, finished with food-safe lacquer.", price: 22.00, images: [pToyTrain, "/placeholder.svg"], category: Category.HomeDecor, tags: ["toy", "wooden", "kids"], artisan: "Lakshmi", materials: ["ivory wood", "vegetable dyes"], inStock: true },
+  { id: "76", name: "Carved Stone Coasters (Set of 4)", description: "Set of four hand-carved soapstone coasters with intricate floral relief patterns.", price: 24.50, images: [pStoneCoasters, "/placeholder.svg"], category: Category.Kitchen, tags: ["coasters", "stone", "carved"], artisan: "Priya", materials: ["soapstone"], inStock: true },
+  { id: "77", name: "Brass Ganesha Wall Plate", description: "Embossed brass Ganesha wall plate — auspicious decor for entryways and pooja rooms.", price: 36.00, images: [pGaneshaPlate, "/placeholder.svg"], category: Category.HomeDecor, tags: ["brass", "ganesha", "wall plate"], artisan: "Anjali", materials: ["brass"], dimensions: "10\" diameter", inStock: true },
+  { id: "78", name: "Khurja Pottery Mug Set", description: "Set of four cheerful Khurja pottery mugs hand-painted with vibrant floral motifs.", price: 29.99, images: [pKhurjaMugs, "/placeholder.svg"], category: Category.Kitchen, tags: ["mugs", "khurja", "pottery"], artisan: "Kavita", materials: ["ceramic"], inStock: true },
+  { id: "79", name: "Embroidered Bookmarks (Set of 4)", description: "Set of four delicate hand-embroidered fabric bookmarks with playful tassels.", price: 9.99, images: [pBookmarks, "/placeholder.svg"], category: Category.Accessories, tags: ["bookmarks", "embroidered"], artisan: "Radha", materials: ["cotton", "embroidery thread"], inStock: true },
+  { id: "80", name: "Wooden Masala Dabba Spice Box", description: "Traditional round wooden masala dabba with 7 compartments for organizing your spices.", price: 28.00, images: [pMasalaDabba, "/placeholder.svg"], category: Category.Kitchen, tags: ["masala dabba", "spice box"], artisan: "Meena", materials: ["sheesham wood"], dimensions: "9\" diameter", featured: true, inStock: true },
+  { id: "81", name: "Hand-Painted Glass Lantern", description: "Vintage-style glass lantern hand-painted with Indian folk motifs — glows beautifully.", price: 34.50, images: [pGlassLantern, "/placeholder.svg"], category: Category.HomeDecor, tags: ["lantern", "glass", "hand-painted"], artisan: "Sunita", materials: ["glass", "metal frame"], dimensions: "9\" tall", inStock: true },
+  { id: "82", name: "Handwoven Cotton Bath Towel", description: "Soft handwoven cotton bath towel with rust striped border — quick-drying and absorbent.", price: 19.99, images: [pBathTowel, "/placeholder.svg"], category: Category.Textile, tags: ["towel", "cotton"], artisan: "Geeta", materials: ["cotton"], dimensions: "30\" x 60\"", inStock: true },
+  { id: "83", name: "Brass Pooja Bell", description: "Small ornate brass pooja bell with melodious tone, perfect for daily rituals.", price: 13.50, images: [pPoojaBell, "/placeholder.svg"], category: Category.HomeDecor, tags: ["brass", "bell", "pooja"], artisan: "Priya", materials: ["brass"], dimensions: "4\" tall", inStock: true },
+  { id: "84", name: "Carved Wooden Hair Stick", description: "Hand-carved wooden hair stick with floral motif — a graceful hair accessory.", price: 8.99, images: [pHairStick, "/placeholder.svg"], category: Category.Accessories, tags: ["hair stick", "wooden"], artisan: "Anjali", materials: ["sandalwood"], dimensions: "7\" length", inStock: true },
+  { id: "85", name: "Hand-Stitched Leather Wallet", description: "Classic brown bifold wallet, hand-stitched from vegetable-tanned full grain leather.", price: 32.50, images: [pLeatherWallet, "/placeholder.svg"], category: Category.Accessories, tags: ["wallet", "leather"], artisan: "Radha", materials: ["vegetable-tanned leather"], inStock: true },
+  { id: "86", name: "Painted Coconut Shell Ornament", description: "Decorative dried coconut shell hand-painted with cheerful folk motifs — hangable.", price: 14.50, images: [pCoconutArt, "/placeholder.svg"], category: Category.HomeDecor, tags: ["coconut", "ornament", "painted"], artisan: "Kavita", materials: ["coconut shell", "paint"], inStock: true },
+  { id: "87", name: "Banana Fiber Placemats (Set of 4)", description: "Set of four woven banana fiber placemats — natural, sustainable, and beautifully textured.", price: 22.50, images: [pBananaPlacemats, "/placeholder.svg"], category: Category.Kitchen, tags: ["placemats", "banana fiber"], artisan: "Lakshmi", materials: ["banana fiber"], dimensions: "13\" diameter", inStock: true },
+  { id: "88", name: "Hand-Forged Iron Wall Hook", description: "Decorative wrought iron wall hook with floral scrollwork — perfect for coats and keys.", price: 17.99, images: [pIronHook, "/placeholder.svg"], category: Category.HomeDecor, tags: ["iron", "hook", "wall"], artisan: "Sunita", materials: ["wrought iron"], dimensions: "8\" tall", inStock: true },
+  { id: "89", name: "Recycled Glass Flower Vase", description: "Handcrafted vase made from recycled glass with a stunning ocean-blue tint.", price: 23.00, images: [pGlassVase, "/placeholder.svg"], category: Category.HomeDecor, tags: ["vase", "glass", "recycled"], artisan: "Geeta", materials: ["recycled glass"], dimensions: "8\" tall", inStock: true },
+  { id: "90", name: "Cotton Yoga Bolster", description: "Handwoven cotton yoga bolster with natural cotton filling — supportive and breathable.", price: 36.00, images: [pYogaBolster, "/placeholder.svg"], category: Category.Textile, tags: ["yoga", "bolster", "cotton"], artisan: "Priya", materials: ["cotton"], dimensions: "26\" x 9\"", newArrival: true, inStock: true },
+  { id: "91", name: "Embroidered Nehru Cap", description: "Traditional Indian cotton Nehru cap with mirror work and colorful paisley embroidery.", price: 19.50, images: [pEmbroideredCap, "/placeholder.svg"], category: Category.Accessories, tags: ["cap", "embroidered", "nehru"], artisan: "Anjali", materials: ["cotton", "thread", "mirrors"], inStock: true }
 ];
 
 export const getProductById = (id: string): Product | undefined => {
