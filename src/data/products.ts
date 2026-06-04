@@ -177,11 +177,11 @@ export const products: Product[] = [
   {
     id: "6",
     name: "Handwoven Bamboo Tote Bag",
-    description: "Stylish and sustainable tote bag woven from locally sourced bamboo. Perfect for shopping or as a beach bag.",
-    price: 49.99,
+    description: "Stylish and sustainable tote bag woven from locally sourced bamboo with a beautiful chevron pattern. Perfect for shopping, work, or as a beach bag.",
+    price: 24.99,
     images: [
-      "/lovable-uploads/6d60b2f2-6f27-4ffc-8804-858b85c80960.png", // Bamboo tote
-      "/images/artisan-crafts.jpg" // Handmade/crafty fallback
+      bambooTote.url,
+      "/images/artisan-crafts.jpg"
     ],
     category: Category.Accessories,
     tags: ["bag", "tote", "bamboo", "shopping"],
