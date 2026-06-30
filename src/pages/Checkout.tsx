@@ -194,64 +194,115 @@ const Checkout = () => {
 
             {step === 2 && (
               <div className="space-y-6">
-                <h2 className="text-xl font-medium flex items-center gap-2">
-                  <CreditCard className="h-5 w-5 text-eco-green" /> Payment Method
-                </h2>
+                <div>
+                  <h2 className="text-xl font-medium flex items-center gap-2">
+                    <CreditCard className="h-5 w-5 text-eco-green" /> Payment Method
+                  </h2>
+                  <p className="text-sm text-muted-foreground mt-1 flex items-center gap-1.5">
+                    <Lock className="h-3.5 w-3.5" /> All transactions are secure and encrypted.
+                  </p>
+                </div>
+
                 <RadioGroup value={paymentMethod} onValueChange={setPaymentMethod} className="space-y-3">
-                  {[
-                    { v: "card", label: "Credit / Debit Card" },
-                    { v: "upi", label: "UPI" },
-                    { v: "cod", label: "Cash on Delivery" },
-                  ].map((opt) => (
-                    <label
-                      key={opt.v}
-                      className={`flex items-center gap-3 border rounded-md p-3 cursor-pointer ${
-                        paymentMethod === opt.v ? "border-eco-green bg-eco-green/5" : "border-eco-stone/30"
-                      }`}
-                    >
-                      <RadioGroupItem value={opt.v} />
-                      <span>{opt.label}</span>
-                    </label>
-                  ))}
+                  <label
+                    className={`flex items-center justify-between gap-3 border rounded-lg p-4 cursor-pointer transition-colors ${
+                      paymentMethod === "card" ? "border-eco-green bg-eco-green/5 ring-1 ring-eco-green" : "border-eco-stone/30 hover:border-eco-stone/60"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <RadioGroupItem value="card" />
+                      <div>
+                        <p className="font-medium">Credit / Debit Card</p>
+                        <p className="text-xs text-muted-foreground">Visa, Mastercard, Amex, Discover</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-1.5">
+                      <span className="px-2 py-1 text-[10px] font-bold rounded bg-[#1A1F71] text-white">VISA</span>
+                      <span className="px-2 py-1 text-[10px] font-bold rounded bg-[#EB001B] text-white">MC</span>
+                      <span className="px-2 py-1 text-[10px] font-bold rounded bg-[#006FCF] text-white">AMEX</span>
+                    </div>
+                  </label>
+
+                  <label
+                    className={`flex items-center justify-between gap-3 border rounded-lg p-4 cursor-pointer transition-colors ${
+                      paymentMethod === "applepay" ? "border-eco-green bg-eco-green/5 ring-1 ring-eco-green" : "border-eco-stone/30 hover:border-eco-stone/60"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <RadioGroupItem value="applepay" />
+                      <div>
+                        <p className="font-medium">Apple Pay</p>
+                        <p className="text-xs text-muted-foreground">Fast, secure checkout with Touch ID or Face ID</p>
+                      </div>
+                    </div>
+                    <span className="px-3 py-1.5 text-xs font-semibold rounded-md bg-black text-white"> Pay</span>
+                  </label>
                 </RadioGroup>
 
                 {paymentMethod === "card" && (
-                  <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-4 pt-2">
                     <div className="sm:col-span-2">
                       <Label>Card Number</Label>
-                      <Input
-                        placeholder="1234 5678 9012 3456"
-                        value={payment.cardNumber}
-                        onChange={(e) => setPayment({ ...payment, cardNumber: e.target.value })}
-                      />
+                      <div className="relative">
+                        <Input
+                          placeholder="1234 5678 9012 3456"
+                          value={payment.cardNumber}
+                          onChange={(e) => setPayment({ ...payment, cardNumber: e.target.value })}
+                          className="pl-10"
+                          inputMode="numeric"
+                          autoComplete="cc-number"
+                        />
+                        <CreditCard className="h-4 w-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+                      </div>
                     </div>
                     <div className="sm:col-span-2">
                       <Label>Name on Card</Label>
-                      <Input value={payment.cardName} onChange={(e) => setPayment({ ...payment, cardName: e.target.value })} />
+                      <Input
+                        placeholder="As shown on card"
+                        value={payment.cardName}
+                        onChange={(e) => setPayment({ ...payment, cardName: e.target.value })}
+                        autoComplete="cc-name"
+                      />
                     </div>
                     <div>
                       <Label>Expiry (MM/YY)</Label>
-                      <Input placeholder="12/27" value={payment.expiry} onChange={(e) => setPayment({ ...payment, expiry: e.target.value })} />
+                      <Input
+                        placeholder="12/27"
+                        value={payment.expiry}
+                        onChange={(e) => setPayment({ ...payment, expiry: e.target.value })}
+                        autoComplete="cc-exp"
+                      />
                     </div>
                     <div>
                       <Label>CVV</Label>
-                      <Input type="password" maxLength={4} value={payment.cvv} onChange={(e) => setPayment({ ...payment, cvv: e.target.value })} />
+                      <div className="relative">
+                        <Input
+                          type="password"
+                          maxLength={4}
+                          placeholder="•••"
+                          value={payment.cvv}
+                          onChange={(e) => setPayment({ ...payment, cvv: e.target.value })}
+                          autoComplete="cc-csc"
+                          className="pr-10"
+                        />
+                        <Lock className="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+                      </div>
                     </div>
                   </div>
                 )}
 
-                {paymentMethod === "upi" && (
-                  <div>
-                    <Label>UPI ID</Label>
-                    <Input placeholder="yourname@bank" />
+                {paymentMethod === "applepay" && (
+                  <div className="rounded-lg border border-eco-stone/30 bg-eco-sand/30 p-4 text-sm text-muted-foreground">
+                    You'll be prompted to confirm payment with Apple Pay after reviewing your order.
                   </div>
                 )}
 
-                {paymentMethod === "cod" && (
-                  <p className="text-sm text-muted-foreground">Pay in cash when your order is delivered.</p>
-                )}
+                <div className="flex items-center gap-2 text-xs text-muted-foreground bg-eco-sand/40 rounded-md p-3">
+                  <ShieldCheck className="h-4 w-4 text-eco-green shrink-0" />
+                  <span>Your payment info is protected with bank-level 256-bit SSL encryption.</span>
+                </div>
 
-                <div className="flex justify-between pt-4">
+                <div className="flex justify-between pt-2">
                   <Button variant="outline" onClick={() => setStep(1)}>Back</Button>
                   <Button
                     className="bg-eco-green hover:bg-eco-green/90"
