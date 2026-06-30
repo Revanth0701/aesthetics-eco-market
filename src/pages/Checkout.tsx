@@ -336,9 +336,8 @@ const Checkout = () => {
                 <div>
                   <h3 className="font-medium mb-2 flex items-center gap-2"><CreditCard className="h-4 w-4" /> Payment</h3>
                   <p className="text-sm text-muted-foreground">
-                    {paymentMethod === "card" && `Card ending in ${payment.cardNumber.slice(-4)}`}
-                    {paymentMethod === "upi" && "UPI"}
-                    {paymentMethod === "cod" && "Cash on Delivery"}
+                    {paymentMethod === "card" && `Card ending in ${payment.cardNumber.replace(/\s/g, "").slice(-4)}`}
+                    {paymentMethod === "applepay" && "Apple Pay"}
                   </p>
                   <Button variant="link" className="px-0 text-eco-green" onClick={() => setStep(2)}>Edit</Button>
                 </div>
