@@ -101,9 +101,7 @@ const Navbar = () => {
                       <Button onClick={clearCart} variant="outline" className="flex-1">
                         Clear Cart
                       </Button>
-                      <Button className="flex-1 bg-eco-green hover:bg-eco-green/90">
-                        Checkout
-                      </Button>
+                      <Button asChild className="flex-1 bg-eco-green hover:bg-eco-green/90"><Link to="/checkout">Checkout</Link></Button>
                     </div>
                   </div>
                 </>
@@ -196,9 +194,7 @@ const Navbar = () => {
                           <Button onClick={clearCart} variant="outline" className="flex-1">
                             Clear Cart
                           </Button>
-                          <Button className="flex-1 bg-eco-green hover:bg-eco-green/90">
-                            Checkout
-                          </Button>
+                          <Button asChild className="flex-1 bg-eco-green hover:bg-eco-green/90"><Link to="/checkout">Checkout</Link></Button>
                         </div>
                       </div>
                     </>
