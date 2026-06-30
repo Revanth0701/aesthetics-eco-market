@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useCart } from "@/hooks/useCart";
 import { useToast } from "@/hooks/use-toast";
-import { Check, CreditCard, MapPin, ShoppingBag, Truck } from "lucide-react";
+import { Check, CreditCard, Lock, MapPin, ShieldCheck, ShoppingBag, Truck } from "lucide-react";
 
 type Step = 1 | 2 | 3 | 4;
 
@@ -65,8 +65,7 @@ const Checkout = () => {
   };
 
   const validatePayment = () => {
-    if (paymentMethod === "cod") return true;
-    if (paymentMethod === "upi") return true;
+    if (paymentMethod === "applepay") return true;
     const { cardNumber, cardName, expiry, cvv } = payment;
     if (!cardNumber || !cardName || !expiry || !cvv) {
       toast({ title: "Missing info", description: "Please complete card details.", variant: "destructive" });
